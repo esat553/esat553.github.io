@@ -1,0 +1,129 @@
+
+:root{
+    --BackgroundColorGradiant: #3f794b79;
+}
+
+
+
+*{
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+}
+
+
+body{
+    background: linear-gradient(var(--BackgroundColorGradiant), var(--BackgroundColorGradiant)), url(./img/background.jpg
+    );
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center ;
+}
+
+div{
+    margin: 5vh 10vw;
+}
+
+h1 {
+    color: goldenrod;
+    font-size: 7vw;
+}
+h2{
+    font-size: 6vw;
+    font-weight: bolder;
+}
+
+h3{
+    font-size: 4vw;
+    margin: 4%;
+}
+
+p{
+    font-size: 3vw;
+    font-weight: 750;
+    color: white;
+}
+
+.bank{
+    background: linear-gradient(#ffffff64, #ffffff64);
+    height: auto;
+    width: 50vw;
+    border-radius: 30px;
+    border: black solid 1px;
+    margin: auto;
+}
+
+#gameButtons{
+    height: auto;
+    width: 230px;
+    margin: 4px auto;
+    display: flex;
+    justify-items: center;
+    
+}
+
+#gameStatusWon{
+    background-color: lightgreen;
+
+}
+#gameStatusLost{
+    background-color: lightcoral;
+}
+#gameStatusU{
+    background-color: grey;
+    color: white;
+}
+
+#message-el{
+    font-style: italic;
+}
+
+.buttons{
+    margin: 4px;
+    font-family: Helvetica, sans-serif;
+    height: 35px;
+    width: 230px;
+    border: 0;
+    background-color: rgb(255, 217, 0);
+    color: #3f794b;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 2px;
+}
+
+#newCard{
+    height: 50px;
+    width: 47.5%;
+    margin: 0;
+    background-color: #3f794b;
+    color: white;
+    box-sizing: border-box;
+    border: black solid 1px;
+}
+
+#hold{
+    color: white;
+    height: 50px;
+    width: 47.5%;
+    margin: 0;
+    margin-left: auto;
+    border: black solid 1px;
+    background-color: rgb(189, 46, 46);
+}
+
+@media (max-width: 599px) {
+    h1{
+        font-size: 3rem;
+    }
+    p{
+        font-size: 1.3rem;
+    }
+  }
+
+@media (min-width: 900px){
+    h1, h2, h3{
+        font-size: 5rem;
+    }
+    p{
+        font-size: 1.6rem;
+    }
+}
